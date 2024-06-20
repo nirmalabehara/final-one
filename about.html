@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Movie Review System</title>
+
+    <style>
+       .navbar {
+      background-color: #141414;
+      color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navbar-brand a {
+      color: #ffffff;
+      font-size: 2.5rem;
+      text-decoration: none;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .navbar-brand a span{
+      color: #e50914;
+  }
+  
+  .navbar-nav {
+      list-style-type: none;
+      display: flex;
+  }
+  
+  .nav-item {
+      margin-right: 20px;
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  .nav-item a {
+      text-decoration: none;
+      color: white;
+  }
+  .nav-item a:hover{
+      color: black;
+      background-color: darkblue;
+  }
+  
+  .navbar-auth {
+      display: flex;
+  }
+  #about-us {
+    padding: 2em;
+    background-color: white;
+}
+
+#about-us h1 {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#about-us h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#about-us p, #about-us ul {
+    margin: 0.5em 0;
+    line-height: 1.6;
+}
+
+#about-us ul {
+    padding-left: 1.5em;
+}
+
+.team {
+    
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1.5em;
+}
+
+.team-member {
+    color: rgb(39, 39, 113);
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin: 0.5em 0 0.2em 0;
+}
+
+.team-member p {
+    margin: 0;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+}
+footer p{
+    color: rgb(197, 208, 212);
+    font-size: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color:#333 ;
+    background-color:rgb(197, 208, 212);
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">Movie<span>Review</span></a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./movies.html">Movies</a></li>
+            <li class="nav-item"><a href="./about.html">About Us</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact Us</a></li>
+            <li class="nav-item"><a href="./profile.html"><i style='font-size:24px' class='fas'>&#xf406;</i></a></li>
+        </ul>
+      </nav>
+
+    <section id="about-us">
+        <h1>About Us</h1>
+        <p>Welcome to Movie Review System, your go-to platform for honest and in-depth movie reviews. Our mission is to help movie enthusiasts make informed decisions by providing comprehensive reviews and ratings for the latest and classic movies.</p>
+        
+        <h2>Our Mission</h2>
+        <p>At Movie Review System, we strive to create a community of movie lovers who can share their thoughts and opinions on various films. We believe that movies are a powerful medium that can inspire, entertain, and educate. Our goal is to provide a platform where users can discover new movies, read and write reviews, and engage in discussions with other movie enthusiasts.</p>
+        
+        <h2>How It Works</h2>
+        <p>Our platform allows users to:</p>
+        <ul>
+            <li>Search for movies by title, genre, or release date.</li>
+            <li>Read reviews and ratings from other users.</li>
+            <li>Write and submit their own reviews and ratings.</li>
+            <li>Follow their favorite reviewers and stay updated with their latest reviews.</li>
+        </ul>
+
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <h3>Nirmala Behara</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>Likhitha Battula</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>Bhavana</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>kiran</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>Pramod</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>Sushma</h3>
+                <p>Lead Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Movie Review System</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

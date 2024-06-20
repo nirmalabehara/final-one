@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-signin-893756953292-vv6f8q2cleaamsbcnfushtcbbbjp87em.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review System</title>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact us-Movie Review System</title>
+    <style>
+         .navbar {
+      background-color: #141414;
+      color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navbar-brand a {
+      color: #ffffff;
+      font-size: 2.5rem;
+      text-decoration: none;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .navbar-brand a span{
+      color: #e50914;
+  }
+  
+  .navbar-nav {
+      list-style-type: none;
+      display: flex;
+  }
+  
+  .nav-item {
+      margin-right: 20px;
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  .nav-item a {
+      text-decoration: none;
+      color: white;
+  }
+  .nav-item a:hover{
+      color: black;
+      background-color: darkblue;
+  }
+  
+  .navbar-auth {
+      display: flex;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+header h1{
+    color: black;
+    font-size: 40px;
+    background-color: rgb(109, 106, 106);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    margin-bottom: 20px;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
+    width: 100%;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+#responseMessage {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+}
+#responseMessage {
+            margin-top: 20px;
+            font-weight: bold;
+            display: none; /* Initially hidden */
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">Movie<span>Review</span></a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./movies.html">Movies</a></li>
+            <li class="nav-item"><a href="./about.html">About Us</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact Us</a></li>
+            <li class="nav-item"><a href="./profile.html"><i style='font-size:24px' class='fas'>&#xf406;</i></a></li>
+        </ul>
+    </nav>
+   
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Send us a message</h2>
+            <form id="contactForm" action="submit_contact.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="responseMessage"></div> <!-- Display response messages here -->
+        </section>
+        
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:contact@moviereviewapp.com">battXXXXXXXXXXX@gmail.com</a></p>
+            <p>Phone: 9XXXXXXXX8 </p>
+            <p>Follow us on <a href="https://twitter.com/moviereviewapp" target="_blank">Twitter</a> and <a href="https://www.facebook.com/moviereviewapp" target="_blank">Facebook</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Review App. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            setTimeout(() => {
+                document.getElementById('responseMessage').innerText = 'Message sent successfully!';
+                document.getElementById('contactForm').reset();
+            }, 1000);
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,394 @@
+
+    
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Movie Search Website</title>
+      <!-- font awesome icons cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- custom css -->
+      <style>
+        .navbar {
+      background-color: #141414;
+      color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navbar-brand a {
+      color: #ffffff;
+      font-size: 2.5rem;
+      text-decoration: none;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .navbar-brand a span{
+      color: #e50914;
+  }
+  
+  .navbar-nav {
+      list-style-type: none;
+      display: flex;
+  }
+  
+  .nav-item {
+      margin-right: 20px;
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  .nav-item a {
+      text-decoration: none;
+      color: white;
+  }
+  .nav-item a:hover{
+      color: black;
+      background-color: darkblue;
+  }
+  
+  .navbar-auth {
+      display: flex;
+  }
+  
+      .movie-card {
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+      }
+  
+      .movie-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .movie-rating {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 5px;
+      }
+  
+      .movie-review {
+        font-size: 0.9rem;
+        color: #666;
+      }
+      .inc{
+          width: 300px;
+          display: inline-flex;
+          
+      }
+      .container{
+  
+       display: inline-flex;
+      }
+          
+  
+  </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+          <a href="#">Movie<span>Review</span></a>
+      </div>
+      <ul class="navbar-nav">
+          <li class="nav-item"><a href="./index.html">Home</a></li>
+          <li class="nav-item"><a href="./movies.html">Movies</a></li>
+          <li class="nav-item"><a href="./about.html">About Us</a></li>
+          <li class="nav-item"><a href="./contact.html">Contact Us</a></li>
+          <li class="nav-item"><a href="./profile.html"><i style='font-size:24px' class='fas'>&#xf406;</i></a></li>
+      </ul>
+    </nav>
+  
+  <div class="container">
+  
+  <img src="Baahubali_The_Beginning-989063887-large.jpg"  class="inc">
+  <div class="movie-card">
+  <div class="movie-title">Bahubali: The Beginning</div>
+  
+  <div class="movie-rating">Rating: 8.1</div>
+  <div class="movie-review">This movie is a landmark in Telugu cinema. Prabhas, Rana, Anushka Shetty, and Ramya Krishnan deliver outstanding performances.</div>
+  </div>
+  
+  <!-- Movie 2 --> 
+    <img src="arjun reddy.jpg" class="inc">
+  <div class="movie-card">
+  <div class="movie-title">Arjun Reddy</div>
+  <div class="movie-rating">Rating: 8.3</div>
+  <div class="movie-review">Arjun Reddy is a movie directed by Vijay Devarakonda in which Vijay Devarakonda plays the lead role.</div>
+  </div>
+  </div>
+  
+  <!-- Movie 3 -->
+  
+  <div class="container">
+  <img src="Ala_Vaikunthapurramuloo.jpeg" class="inc">
+  <div class="movie-card">
+  <div class="movie-title">Ala Vaikunthapurramuloo</div>
+  <div class="movie-rating">Rating: 7.9</div>
+  <div class="movie-review">Stylish Star Allu Arjun played a lead role in this movie and his dance and comedy scenes are hilarious.</div>
+  </div>
+  
+  <!-- Add more movies -->
+  <!-- Movie 4 -->
+  <img src="mirchi.jpg" class="inc">
+  <div class="movie-card">
+  <div class="movie-title">Mirchi</div>
+  <div class="movie-rating">Rating: 7.4</div>
+  <div class="movie-review">Prabhas and Anushka Shetty's chemistry was the highlight of this action-packed romantic drama.</div>
+  </div>
+  </div>
+  
+  <!-- Movie 5 -->
+  <div class="container">
+      <img src="jersey-et00077973-19-06-2018-02-57-43.avif" class="inc" width="200px">
+  <div class="movie-card">
+  <div class="movie-title">Jersey</div>
+  <div class="movie-rating">Rating: 8.5</div>
+  <div class="movie-review">Nani's exceptional performance as a cricketer who fights against all odds made this movie a must-watch.</div>
+  </div>
+  
+  
+  <!-- Movie 6 -->
+  
+  <div class="movie-card">
+      <img src="srimanthudu-et00031158-01-12-2019-04-10-00.avif" class="inc" width="600px">
+    <div class="movie-title">Srimanthudu</div>
+    <div class="movie-rating">Rating: 7.6</div>
+    <div class="movie-review">Mahesh Babu's philanthropic role was well-received by the audience, along with his chemistry with Shruti Haasan.</div>
+  </div>
+  
+  
+  <!-- Movie 7 -->
+  <div class="movie-card">
+      <img src="geetha.jpeg" class="inc">
+    <div class="movie-title">Geetha Govindam</div>
+    <div class="movie-rating">Rating: 8.0</div>
+    <div class="movie-review">Vijay Devarakonda and Rashmika Mandanna's romantic comedy became an instant hit for its fresh storyline and entertaining dialogues.</div>
+  
+  </div>
+  </div>
+  
+  <!-- Movie 8 -->
+  <div class="container">
+  
+  <div class="movie-card">
+      <img src="eaga.jpg" class="inc">
+    <div class="movie-title">Eega</div>
+    <div class="movie-rating">Rating: 8.7</div>
+    <div class="movie-review">Rajamouli's unique storyline of a reincarnated fly taking revenge mesmerized the audience with its visual effects.</div>
+  </div>
+  
+  
+  <!-- Movie 9 -->
+  
+  <div class="movie-card">
+      <img src="mahanati.jpeg" class="inc">
+    <div class="movie-title">Mahanati</div>
+    <div class="movie-rating">Rating: 8.8</div>
+    <div class="movie-review">Keerthy Suresh's portrayal of the legendary actress Savitri was praised for its authenticity and depth.</div>
+  </div>
+  
+  <!-- Movie 10 -->
+  <div class="movie-card">
+      <img src="baahubali.avif" class="inc">
+    <div class="movie-title">Baahubali 2: The Conclusion</div>
+    <div class="movie-rating">Rating: 9.2</div>
+    <div class="movie-review">The epic conclusion to the Baahubali saga continued to break records worldwide with its grandeur and emotional depth.</div>
+  </div>
+  </div>
+
+
+    <!-- Movie 11 -->
+    <div class="container">
+    <div class="movie-card">
+        <img src="maga.jpg" class="inc">
+        <div class="movie-title">Magadheera</div>
+        <div class="movie-rating">Rating: 8.2</div>
+        <div class="movie-review">This reincarnation drama directed by Rajamouli was a visual spectacle and a huge hit.</div>
+      </div>
+  
+      <!-- Movie 12 -->
+      <div class="movie-card">
+        <img src="ranga.jpg" class="inc">
+        <div class="movie-title">Rangasthalam</div>
+        <div class="movie-rating">Rating: 8.4</div>
+        <div class="movie-review">Ram Charan's rustic performance in this village drama was widely appreciated.</div>
+      </div>
+  
+   
+      <!-- Movie 13 -->
+     
+      <div class="movie-card">
+        <img src="fida.jpg" class="inc">
+        <div class="movie-title">Fidaa</div>
+        <div class="movie-rating">Rating: 7.5</div>
+        <div class="movie-review">Sai Pallavi's debut in Telugu cinema, along with Varun Tej's performance, made this love story special.</div>
+      </div>
+  
+      <!-- Movie 14 -->
+      <div class="movie-card">
+        <img src="atta.jpg" class="inc">
+        <div class="movie-title">Attarintiki Daredi</div>
+        <div class="movie-rating">Rating: 7.9</div>
+        <div class="movie-review">Pawan Kalyan's charm and Trivikram's dialogues were a perfect combination for this family entertainer.</div>
+      </div>
+  </div>
+      <!-- Movie 15 -->
+      <div class="container">
+      <div class="movie-card">
+        <img src="chatra.jpg" class="inc">
+        <div class="movie-title">Chatrapathi</div>
+        <div class="movie-rating">Rating: 7.2</div>
+        <div class="movie-review">Prabhas' powerful performance and Rajamouli's direction made this action film a blockbuster.</div>
+      </div>
+  
+      <!-- Movie 16 -->
+      <div class="movie-card">
+        <img src="gabbar.avif" class="inc">
+        <div class="movie-title">Gabbar Singh</div>
+        <div class="movie-rating">Rating: 7.3</div>
+        <div class="movie-review">Pawan Kalyan's energetic performance as a police officer was the highlight of this film.</div>
+      </div>
+  
+      
+      <!-- Movie 17 -->
+    
+      <div class="movie-card">
+        <img src="nanna.jpg" class="inc">
+        <div class="movie-title">Nannaku Prematho</div>
+        <div class="movie-rating">Rating: 8.0</div>
+        <div class="movie-review">NTR's stylish role and Sukumar's direction made this film a memorable experience.</div>
+      </div>
+  
+      <!-- Movie 18 -->
+      <div class="movie-card">
+        <img src="pokiri.jpeg" class="inc">
+        <div class="movie-title">Pokiri</div>
+        <div class="movie-rating">Rating: 8.1</div>
+        <div class="movie-review">Mahesh Babu's career-defining role as an undercover cop in this action thriller.</div>
+      </div>
+      </div>
+  
+      <!-- Movie 19 -->
+      <div class="container">
+      <div class="movie-card">
+        <img src="kshanam.jpg" class="inc">
+        <div class="movie-title">Kshanam</div>
+        <div class="movie-rating">Rating: 8.4</div>
+        <div class="movie-review">A gripping thriller with excellent performances by Adivi Sesh and Adah Sharma.</div>
+      </div>
+  
+      <!-- Movie 20 -->
+      <div class="movie-card">
+        <img src="bharath.jpg" class="inc">
+        <div class="movie-title">Bharat Ane Nenu</div>
+        <div class="movie-rating">Rating: 8.0</div>
+        <div class="movie-review">Mahesh Babu's role as a young and dynamic Chief Minister was well-received by the audience.</div>
+      </div>
+
+  
+      <!-- Movie 21 -->
+     
+      <div class="movie-card">
+        <img src="evaru.jpg" class="inc">
+        <div class="movie-title">Evaru</div>
+        <div class="movie-rating">Rating: 7.8</div>
+        <div class="movie-review">A suspenseful thriller with strong performances by Adivi Sesh and Regina Cassandra.</div>
+      </div>
+  
+      <!-- Movie 22 -->
+      <div class="movie-card">
+        <img src="agent.jpg" class="inc">
+        <div class="movie-title">Agent Sai Srinivasa Athreya</div>
+        <div class="movie-rating">Rating: 8.3</div>
+        <div class="movie-review">A comedy thriller with Naveen Polishetty in a standout role as a quirky detective.</div>
+      </div>
+      </div>
+  
+      <!-- Movie 23 -->
+      <div class="container">
+      <div class="movie-card">
+        <img src="goodachari.avif" class="inc">
+        <div class="movie-title">Goodachari</div>
+        <div class="movie-rating">Rating: 7.8</div>
+        <div class="movie-review">A slick spy thriller starring Adivi Sesh, known for its tight script and engaging plot.</div>
+      </div>
+  
+      <!-- Movie 24 -->
+      <div class="movie-card">
+        <img src="kgf.jpg" class="inc">
+        <div class="movie-title">K.G.F: Chapter 1</div>
+        <div class="movie-rating">Rating: 8.2</div>
+        <div class="movie-review">Though primarily a Kannada film, its Telugu version was a massive hit due to its intense storyline and Yash's powerful performance.</div>
+      </div>
+  
+  
+      <!-- Movie 25 -->
+     
+      <div class="movie-card">
+        <img src="sye.jpg" class="inc">
+        <div class="movie-title">Sye</div>
+        <div class="movie-rating">Rating: 7.6</div>
+        <div class="movie-review">Rajamouli's sports drama that combined rugby with a captivating underdog story.</div>
+      </div>
+  
+      <!-- Movie 26 -->
+      <div class="movie-card">
+        <img src="oopiri.jpg" class="inc">
+        <div class="movie-title">Oopiri</div>
+        <div class="movie-rating">Rating: 8.0</div>
+        <div class="movie-review">A heartwarming film about the bond between a quadriplegic millionaire and his caregiver, starring Nagarjuna and Karthi.</div>
+      </div>
+      </div>
+  
+      <!-- Movie 27 -->
+      <div class="container">
+      <div class="movie-card">
+        <img src="f2.jpg" class="inc">
+        <div class="movie-title">F2: Fun and Frustration</div>
+        <div class="movie-rating">Rating: 7.2</div>
+        <div class="movie-review">A hilarious family entertainer with Venkatesh and Varun Tej providing the laughs.</div>
+      </div>
+  
+      <!-- Movie 28 -->
+      <div class="movie-card">
+        <img src="race gurram.jpg" class="inc">
+        <div class="movie-title">Race Gurram</div>
+        <div class="movie-rating">Rating: 7.5</div>
+        <div class="movie-review">Allu Arjun's energetic performance and Surender Reddy's direction made this action-comedy a big hit.</div>
+      </div>
+   
+  
+      <!-- Movie 29 -->
+      <div class="movie-card">
+        <img src="manam.jpg" class="inc">
+        <div class="movie-title">Manam</div>
+        <div class="movie-rating">Rating: 8.1</div>
+        <div class="movie-review">A unique family drama featuring three generations of the Akkineni family, directed by Vikram Kumar.</div>
+      </div>
+  
+      <!-- Movie 30 -->
+      <div class="movie-card">
+        <img src="nuv naku nachav.jpg" class="inc">
+        <div class="movie-title">Nuvvu Naaku Nachav</div>
+        <div class="movie-rating">Rating: 8.0</div>
+        <div class="movie-review">A classic romantic comedy with Venkatesh and Aarthi Agarwal, known for its light-hearted humor and engaging storyline.</div>
+      </div>
+      </div>
+  
+  
+        
+  
+  </body>
+  </html>
+      
+  </body>
+  </html>
